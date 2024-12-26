@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,amsthm}
+
+\begin{document}
+\section{What is a Proof?}
+\subsection{Problem 1.1}
+Can't easily do a visual prolem in \LaTeX, and I am too lazy to create graphics for this. I will try to use my words instead.
+\subsubsection{Problem 1.1 (a)}
+Arrange the triangles so that the ``a'' side of one is on the ``b'' side of the other, with the acute angles touching. Do this for all of them, and the ``c'' sides will form an outer square of size $c\times c$, and the square hole in the middle will be of size $(b-a)\times(b-a)$.
+\subsubsection{Problem 1.1 (b)}
+Move two adjacent triangles to the opposite side of the $c\times c$ sqaure, so that their ``c'' sides are flush, forming two $a\times b$ rectangles, touching each other and the $(b-a)\times(b-a)$ square. This forms a single shape (that looks like a 'P' turned $90^{\circ}$ to the right. They form two squares of size $a\times a$ and $b\times b$. The $b\times b$ square includes the $(b-a)\times(b-a)$ square, one of the $b\times a$ rectangles, and a small section of the other one. The $a\times a$ square is formed with the rest of that rectangle.
+\subsubsection{Problem 1.1 (c)}
+In the case of $a=b$, The $(b-a)\times(b-a)$ rectangle becomes a degenerate $0\times0$ rectangle. However this does not pose a problem the proof still holds. As $a=b$, the triangles are right-angle isoceles triangles. For (a), the triangles form a square with the sides forming an ``$\times$'' in the middle. For part (b), the triangles are rearranged into a $a\times2a$ rectangle, made up of two $a\times a$ squares, which shows that $a^2 + a^2 = a^2 + b^2 = c^2$ using the preservation of area under rearrangement.
+\subsubsection{Problem 1.1 (d)}
+1. That the two acute angles of a right-angled triangle sum to $90^{\circ}$.\\
+2. When putting the right angle of a right-angled triangle against a straight line, they form a retroflex right angle (For part (a), these become the corners of the square).\\
+3. That if you put a line of length $a$ along a line of length $b$, the remaining length not covered by the first line is of length $b-a$.\\
+4. That is a shape has 4 right-angles and equal sides, it is a square. (I am not as confident in this one, because, isn't this the defintion of a square??)\\
+5. That the acute angles from two right-angle triangles together sum to $180^{\circ}$.
+\end{document}
