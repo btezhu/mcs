@@ -1,5 +1,6 @@
 \documentclass{article}
-\usepackage{amsmath,amssymb,amsthm}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue}
 
 \begin{document}
 \section{What is a Proof?}
@@ -39,4 +40,6 @@ $\log_{10}{(1/2)}$ is negative, and thus you cannot multiply both sides of the i
 When $a=b$, $a-b$ is equal to $0$, thus cancelling the $(a-b)$'s is invalid as it is dividing by zero.
 \subsection{Problem 1.4}
 While the implications going from each statement each happen to be true, this is not a valid proof as the directionality of the implicaitons should be reversed. If the proof started with $(a-b)^2 \ge 0$ and did the steps in reverse, finishing at $\frac{a+b}{2} \ge \sqrt{ab}$, then the proof would have been valid.
+\subsection{Problem 1.5}
+This is the \href{https://en.wikipedia.org/wiki/Unexpected_hanging_paradox}{Unexpected Hanging Paradox}, and there is no consensus to its nature. My opinion is that the ``it will be a surprise'' element of the statement is equivalent to ``the day cannot be deduced from this statement''. But, this is self-referencial, leading to a paradox in a manner similar to the \href{https://en.wikipedia.org/wiki/Liar_paradox}{Liar Paradox}.
 \end{document}
