@@ -8,7 +8,7 @@
 	- [x] Problem 1.5
 	- [x] Problem 1.6
 	- [x] Problem 1.7
-	- [ ] Problem 1.8
+	- [x] Problem 1.8
 	- [ ] Problem 1.9
 	- [ ] Problem 1.10
 	- [ ] Problem 1.11
