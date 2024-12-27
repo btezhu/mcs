@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{amsmath,amssymb,amsthm}
+\usepackage{bbold}
 \usepackage[colorlinks=true,urlcolor=blue]{hyperref}
 \usepackage[a4paper, total={7in,10in}]{geometry}
 
@@ -43,4 +44,22 @@ When $a=b$, $a-b$ is equal to $0$, thus cancelling the $(a-b)$'s is invalid as i
 While the implications going from each statement each happen to be true, this is not a valid proof as the directionality of the implicaitons should be reversed. If the proof started with $(a-b)^2 \ge 0$ and did the steps in reverse, finishing at $\frac{a+b}{2} \ge \sqrt{ab}$, then the proof would have been valid.
 \subsection{Problem 1.5}
 This is the \href{https://en.wikipedia.org/wiki/Unexpected_hanging_paradox}{Unexpected Hanging Paradox}, and there is no consensus to its nature. My opinion is that the ``it will be a surprise'' element of the statement is equivalent to ``the day cannot be deduced from this statement''. But, this is self-referencial, leading to a paradox in a manner similar to the \href{https://en.wikipedia.org/wiki/Liar_paradox}{Liar Paradox}.
+\subsection{Problem 1.6}
+We use proof by contradiction.\\
+Suppose ``$log_7n$ is either an integer or irrational'' is false. This is equivalent to ``$log_7n$ is a rational number and not an integer''.
+\begin{align}
+  log_7n &= \frac{p}{q}\text{ where coprime }p,q\in\mathbb{Z}^+ && \text{definition of rational number} \\
+  qlog_7n &= p && \text{multiply both sides by }q\text{ as }q\in\mathbb{Z}^+\implies q\ne0 \\
+  log_7n^q &= p && ylog_bx=log_bx^y \\
+  7^{log_7n^q} &= 7^p \\
+  n^q &= 7^p && b^{log_bx} = x
+\end{align}
+Note that the prime-factorisation of the RHS must be equal to the prime-factorisation of the RHS. Thus $n^q$ is made up entirely of $7$'s. As exponentiation by $q$ does not change which primes are included in the factorisation, $n$ must thus be entirely made of $7$'s as well, i.e, $n$ is a power of $7$. Thus, $n=7^m$, where $m\in\mathbb{N}$. Thus, $n^q=(7^m)^q=7^{mq}=7^p$, since $(a^b)^c=a^{(bc)}$. Thus $mq=p$, since $x^a=x^b\implies a=b$.\\
+\\
+Note that either $m=0$, or $q$ is a factor of $p$ (since $mq=p$ and $m,q,p\in\mathbb{Z}^+$). If $q$ is a factor of $p$, then it is either $1$, $p$, or a non-trivial factor of $p$ (i.e., a factor that isn't $1$ or $p$).\\
+\\
+All of these cases lead to contradictions. If $m=0$, then $mq=0q=0=p$, since $0x=0$. But $p=0$ contradicts $p\in\mathbb{Z}^+$. If $q=1$, then $log_7n=\frac{p}{q}=\frac{p}{1}=p$, but this contradicts $log_7n$ being not an integer, as $p$ is an integer. If $q=p$, then $log_7n=\frac{p}{q}=\frac{p}{p}=1$, which is a contradiction with $log_7n$ not being an integer as $1$ is an integer. If $q$ is a non-trivial factor of $p$, then this contradicts $q$ and $p$ being coprime, as $p$ and $q$ share a common factor, namely $q$.\\
+\\
+Thus $log_7n$ is either an integer or irrational.
+\hfill$\blacksquare$
 \end{document}
